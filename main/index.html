@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dragon Game</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+
+    <div id="game-container">
+        <h1>Dragon Game</h1>
+        <div id="stats">
+            <p>Health: <span id="health">100</span></p>
+            <p>Gold: <span id="gold">70</span></p>
+            <p>XP: <span id="xp">0</span></p>
+            <p id="weapons">Weapons: </p>
+            <p id="dragon-health" style="display: none;">Dragon Health: <span id="dragon-health-value">0</span></p>
+        </div>
+        <div id="options">
+            <button onclick="goToStore()">Go to Store</button>
+            <button onclick="initiateFight('small')">Fight Small Dragon</button>
+            <button onclick="initiateFight('big')">Fight Big Dragon</button>
+        </div>
+        <div id="battle-options" style="display: none;">
+            <button onclick="attackDragon()">Attack Dragon</button>
+            <button onclick="runAway()">Run Away</button>
+        </div>
+        <div id="store">
+            <h2>Store</h2>
+            <p>Available Weapons:</p>
+            <ul id="weapons-list">
+                <li><button onclick="buyWeapon('Wooden Sword', 10, 5)">Buy Wooden Sword (10 Gold)</button></li>
+                <li><button onclick="buyWeapon('Iron Sword', 20, 10)">Buy Iron Sword (20 Gold)</button></li>
+                <li><button onclick="buyWeapon('Steel Axe', 30, 15)">Buy Steel Axe (30 Gold)</button></li>
+                <li><button onclick="buyWeapon('Golden Bow', 40, 20)">Buy Golden Bow (40 Gold)</button></li>
+            </ul>
+            <button onclick="closeStore()">Close Store</button>
+        </div>
+    </div>
+
+    </body>
+    <script src="index.js"></script>
+</html>

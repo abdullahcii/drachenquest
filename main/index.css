@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(160, 150, 150);
+}
+
+#store {
+    display: none;
+}
+
+#weapons-list {
+    list-style: none;
+}
+
+#stats {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
